@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		4FB55B041F6C103B008B5101 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB55B031F6C103B008B5101 /* AppDelegate.swift */; };
-		4FB55B061F6C103B008B5101 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB55B051F6C103B008B5101 /* ViewController.swift */; };
 		4FB55B091F6C103C008B5101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FB55B071F6C103C008B5101 /* Main.storyboard */; };
 		4FB55B0C1F6C103C008B5101 /* TableViewSwift4.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4FB55B0A1F6C103C008B5101 /* TableViewSwift4.xcdatamodeld */; };
 		4FB55B0E1F6C103C008B5101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FB55B0D1F6C103C008B5101 /* Assets.xcassets */; };
 		4FB55B111F6C103C008B5101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FB55B0F1F6C103C008B5101 /* LaunchScreen.storyboard */; };
 		4FB55B1C1F6C103D008B5101 /* TableViewSwift4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB55B1B1F6C103D008B5101 /* TableViewSwift4Tests.swift */; };
 		4FB55B271F6C103D008B5101 /* TableViewSwift4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB55B261F6C103D008B5101 /* TableViewSwift4UITests.swift */; };
+		4FB55B381F6C15E5008B5101 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB55B371F6C15E5008B5101 /* CategoryCell.swift */; };
+		4FB55B3A1F6C16E6008B5101 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB55B391F6C16E6008B5101 /* CategoriesVC.swift */; };
+		4FB55B3C1F6C2054008B5101 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB55B3B1F6C2054008B5101 /* Category.swift */; };
+		4FB55B3F1F6C21E8008B5101 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB55B3E1F6C21E8008B5101 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +40,6 @@
 /* Begin PBXFileReference section */
 		4FB55B001F6C103B008B5101 /* TableViewSwift4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewSwift4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FB55B031F6C103B008B5101 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4FB55B051F6C103B008B5101 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4FB55B081F6C103C008B5101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4FB55B0B1F6C103C008B5101 /* TableViewSwift4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TableViewSwift4.xcdatamodel; sourceTree = "<group>"; };
 		4FB55B0D1F6C103C008B5101 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		4FB55B221F6C103D008B5101 /* TableViewSwift4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewSwift4UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FB55B261F6C103D008B5101 /* TableViewSwift4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSwift4UITests.swift; sourceTree = "<group>"; };
 		4FB55B281F6C103D008B5101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FB55B371F6C15E5008B5101 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		4FB55B391F6C16E6008B5101 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
+		4FB55B3B1F6C2054008B5101 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		4FB55B3E1F6C21E8008B5101 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,10 @@
 		4FB55AF71F6C103A008B5101 = {
 			isa = PBXGroup;
 			children = (
+				4FB55B3D1F6C21D5008B5101 /* Services */,
+				4FB55B361F6C159E008B5101 /* View */,
+				4FB55B351F6C158F008B5101 /* Model */,
+				4FB55B341F6C157F008B5101 /* Controller */,
 				4FB55B021F6C103B008B5101 /* TableViewSwift4 */,
 				4FB55B1A1F6C103D008B5101 /* TableViewSwift4Tests */,
 				4FB55B251F6C103D008B5101 /* TableViewSwift4UITests */,
@@ -100,7 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				4FB55B031F6C103B008B5101 /* AppDelegate.swift */,
-				4FB55B051F6C103B008B5101 /* ViewController.swift */,
 				4FB55B071F6C103C008B5101 /* Main.storyboard */,
 				4FB55B0D1F6C103C008B5101 /* Assets.xcassets */,
 				4FB55B0F1F6C103C008B5101 /* LaunchScreen.storyboard */,
@@ -126,6 +135,38 @@
 				4FB55B281F6C103D008B5101 /* Info.plist */,
 			);
 			path = TableViewSwift4UITests;
+			sourceTree = "<group>";
+		};
+		4FB55B341F6C157F008B5101 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4FB55B391F6C16E6008B5101 /* CategoriesVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4FB55B351F6C158F008B5101 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4FB55B3B1F6C2054008B5101 /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4FB55B361F6C159E008B5101 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4FB55B371F6C15E5008B5101 /* CategoryCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4FB55B3D1F6C21D5008B5101 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4FB55B3E1F6C21E8008B5101 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +237,7 @@
 				TargetAttributes = {
 					4FB55AFF1F6C103B008B5101 = {
 						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Manual;
 					};
 					4FB55B161F6C103D008B5101 = {
 						CreatedOnToolsVersion = 9.0;
@@ -259,9 +301,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FB55B061F6C103B008B5101 /* ViewController.swift in Sources */,
 				4FB55B0C1F6C103C008B5101 /* TableViewSwift4.xcdatamodeld in Sources */,
+				4FB55B3C1F6C2054008B5101 /* Category.swift in Sources */,
 				4FB55B041F6C103B008B5101 /* AppDelegate.swift in Sources */,
+				4FB55B3F1F6C21E8008B5101 /* DataService.swift in Sources */,
+				4FB55B381F6C15E5008B5101 /* CategoryCell.swift in Sources */,
+				4FB55B3A1F6C16E6008B5101 /* CategoriesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,11 +472,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9NXT87QQZN;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TableViewSwift4/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pari.TableViewSwift4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -441,11 +488,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9NXT87QQZN;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TableViewSwift4/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pari.TableViewSwift4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
